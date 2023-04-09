@@ -1,0 +1,21 @@
+html, body {
+  margin: 0;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.shout-out {
+  margin-right: 1rem;
+}
