@@ -17,7 +17,7 @@
       <div class="container">
         <div class="navbar-brand">
           <div class="m-2 has-background-light is-round" style="border-radius: 0.25rem;">
-            <a class="navbar-item" href="#">
+            <a class="navbar-item" href="{{ route('index') }}">
               <img src="{{ asset('./assets/binus-logo.jpeg') }}" alt="logo binus">
             </a>
           </div>
@@ -29,14 +29,14 @@
         </div>
         <div id="nav-item" class="navbar-menu">
           <div class="navbar-end">
-            <a class="navbar-item">
+            <a class="navbar-item" href="{{ route('dosen.index') }}">
               Dosen
             </a>
-            <a class="navbar-item">
-              Kelas
+            <a class="navbar-item" href="{{ route('major.index') }}">
+              Major
             </a>
-            <a class="navbar-item">
-              Mata kuliah
+            <a class="navbar-item" href="{{ route('faculty.index') }}">
+              Faculty
             </a>
           </div>
         </div>
