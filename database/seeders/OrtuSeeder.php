@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Ortu;
 use Illuminate\Database\Seeder;
 
 class OrtuSeeder extends Seeder
@@ -13,6 +14,6 @@ class OrtuSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Ortu::factory(5)->create();
     }
 }

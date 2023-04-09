@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Faculty;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class MajorFactory extends Factory
@@ -14,7 +15,8 @@ class MajorFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name' => $this->faker->unique()->word(),
+            'faculty_id' => $this->faker->numberBetween(1, Faculty::count())
         ];
     }
 }

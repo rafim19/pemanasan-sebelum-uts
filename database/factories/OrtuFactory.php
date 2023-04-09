@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class OrtuFactory extends Factory
@@ -14,7 +15,8 @@ class OrtuFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name' => $this->faker->name(),
+            'umur' => $this->faker->numberBetween(50, 80),
         ];
     }
 }
